@@ -1,0 +1,9 @@
+version: '3.7'
+ 
+services:
+    node_log:
+        build: ./node_log/
+        container_name: node_log
+        restart: "unless-stopped"
+        volumes:
+            - "./appconfig/:/appconfig/"
